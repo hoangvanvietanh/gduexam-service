@@ -1,5 +1,5 @@
 var NodeJs_Dich_vu = require("http")
-var Luu_tru = require("../Xu_ly/XL_LUU_TRU")
+var Luu_tru = require("./Xu_ly/XL_LUU_TRU")
 //var Goi_thu = require("../Xu_ly/XL_GOI_THU_DIEN_TU")
 var Port = normalizePort(process.env.PORT || 1200);
 var Xu_ly_Tham_so = require('querystring')

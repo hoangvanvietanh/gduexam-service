@@ -9,7 +9,7 @@
     },
     "devDependencies": {},
     "scripts": {
-        "start": "node ./Dich_vu/DV_DU_LIEU.js"
+        "start": "node ./app.js"
     },
     "author": "",
     "license": "ISC"
