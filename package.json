@@ -1,0 +1,16 @@
+{
+    "name": "dv_webtracnghiem",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "mongodb": "^3.3.0",
+        "websocket": "^1.0.30"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "node ./Dich_vu/DV_DU_LIEU.js"
+    },
+    "author": "",
+    "license": "ISC"
+}
