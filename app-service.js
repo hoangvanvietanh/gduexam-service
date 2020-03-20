@@ -717,14 +717,14 @@ Dich_vu.listen(Port,
     console.log(`Dịch vụ Dữ liệu đang thực thi tại địa chỉ: http://localhost:${Port}`)
 );
 
-Dich_vu.on('error', onError);
-Dich_vu.on('listening', onListening);
+// Dich_vu.on('error', onError);
+// Dich_vu.on('listening', onListening);
 Dich_vu_http.listen(Port_http,
     console.log(`Dịch vụ Dữ liệu đang thực thi tại địa chỉ: http://localhost:${Port_http}`)
 );
 
-Dich_vu_http.on('error', onError);
-Dich_vu_http.on('listening', onListening);
+// Dich_vu_http.on('error', onError);
+// Dich_vu_http.on('listening', onListening);
 
 
 //Websocket
