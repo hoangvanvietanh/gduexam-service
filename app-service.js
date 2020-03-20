@@ -1,4 +1,9 @@
-var NodeJs_Dich_vu = require("http")
+var NodeJs_Dich_vu = require("https")
+const fs = require('fs');
+const options = {
+    key: fs.readFileSync('/etc/letsencrypt/live/daihocgiadinh.vn/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/daihocgiadinh.vn/fullchain.pem')
+  };
 var Luu_tru = require("./Xu_ly/XL_LUU_TRU")
 //var Goi_thu = require("../Xu_ly/XL_GOI_THU_DIEN_TU")
 var Port = normalizePort(process.env.PORT || 1200);
@@ -42,7 +47,7 @@ Danh_sach_Diem_Sinh_vien.then(Kq => {
 var Ds_Nhat_ky = Luu_tru.Doc_Nhat_ky_login()
 Du_lieu.Danh_sach_Nhat_ky = Ds_Nhat_ky;
 
-var Dich_vu = NodeJs_Dich_vu.createServer((Yeu_cau, Dap_ung) => {
+var Dich_vu = NodeJs_Dich_vu.createServer(options,(Yeu_cau, Dap_ung) => {
     var Chuoi_Nhan = ""
     var Dia_chi_Xu_ly = Yeu_cau.url.replace("/", "")
     Yeu_cau.on('data', (chunk) => { Chuoi_Nhan += chunk })
