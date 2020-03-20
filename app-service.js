@@ -1,4 +1,4 @@
-var NodeJs_Dich_vu_http = require("https")
+var NodeJs_Dich_vu_http = require("http")
 var NodeJs_Dich_vu = require("https")
 const fs = require('fs');
 const options = {
