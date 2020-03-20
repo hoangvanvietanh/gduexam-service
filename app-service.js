@@ -2,8 +2,8 @@ var NodeJs_Dich_vu_http = require("https")
 var NodeJs_Dich_vu = require("https")
 const fs = require('fs');
 const options = {
-    key: fs.readFileSync('/etc/letsencrypt/live/daihocgiadinh.vn/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/daihocgiadinh.vn/fullchain.pem')
+    key: fs.readFileSync('/etc/letsencrypt/live/daihocgiadinh.com.vn/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/daihocgiadinh.com.vn/fullchain.pem')
   };
 var Luu_tru = require("./Xu_ly/XL_LUU_TRU")
 //var Goi_thu = require("../Xu_ly/XL_GOI_THU_DIEN_TU")
