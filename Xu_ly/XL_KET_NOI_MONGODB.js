@@ -5,8 +5,8 @@ var DbConnection = function() {
     var instance = 0
     async function DbConnect() {
         try {
-            var url = `mongodb://172.16.26.26:27017`
-            //var url = `mongodb+srv://vietanh:113114115@cluster0-jfbgb.mongodb.net/test?retryWrites=true&w=majority`
+            //var url = `mongodb://localhost:27017`
+            var url = `mongodb+srv://hoangvanvietanh:113114115@cluster0-unj1a.mongodb.net/test?retryWrites=true&w=majority`
             //var url = `mongodb+srv://vietanh:113114115@server-nnbiq.gcp.mongodb.net/test?retryWrites=true&w=majority`
             var _db = await MongoClient.connect(url, { useUnifiedTopology: true, useNewUrlParser: true })
             return _db.db(`gia_dinh_university`)
